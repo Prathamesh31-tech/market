@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Vegetable Prices</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+body {
+        background: url(image.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    
+      
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+table {
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.input-box{
+   border: 1px solid green;
+   padding: 5px;
+   margin: 10px;
+   border-radius: 7px;
+}
+#searchBtn{
+    background-color:rgb(7, 118, 9) ;
+    color: white;
+    border-radius: 7px;
+}
+    </style>
+</head>
+<body>
+    <div class="search-box">
+        <input type="text" placeholder="Enter Your District" class="input-box">
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass">Seasrch</i></button>
+    </div>
+    <h1>Live Vegetable Prices</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Market</th>
+                <th>Commodity</th>
+                <th>Price (₹/kg)</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="priceTable">
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+    <script src="market.js"></script>
+</body>
+</html>

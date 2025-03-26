@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="in2.css">
+    <title>Home Page</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg " style="background-color: white;">
+    <div class="container-fluid">
+     <a class="navbar-brand" href="#" style="font-weight: bold; display: flex; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" id="badlav"  ><div style=" display: flex ; flex-direction: column; justify-content: center; height: 30px; width: 140px ;"><img style="width: 150px; " src="images/newlogo.png" alt=""></div></a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class=" logout navbar-nav">
+          <a style="text-decoration: none; color: black;" href="about.html"  id="output">About</a>
+          <a style="text-decoration: none; color: black;" href="farmer.html"  id="output">Home</a>
+          <a style="text-decoration: none; color: black;" href="help.html"  id="output">Help</a>
+          <a style="text-decoration: none;" href="logout.php" class="logout" id="output">Logout</a>
+       
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="fakeheader"></div>
+
+
+  <div class="weather">
+    <div class="error">
+      <h1>Sorry,Location Not Found!!!</h1>
+  </div>   
+
+  <div class="fakewea">
+    <div class="search-box" style=" background-color: rgb(255, 255, 255);box-shadow: 0px 0px 10px black; border-radius: 5px;">
+      <input style=" border: none; outline: none;" type="text" placeholder="Enter Your Location" class="input-box">
+        <div id="searchBtn" style=" margin-right: 10px; height: 30px; width: 30px; display: flex; align-items: center; justify-content: center; background-image: url(images/pngegg.png);  background-size: cover; background-position: center; "></div>
+  </div>
+
+  </div>
+    <div class="wea">
+    <img src="images/sun-removebg-preview.png" alt="weather img" id="weather-img">
+    <div class="weather-box" >
+      <p class="temperature">0°C </p>
+      <p class="description">Light Rain</p>
+    </div>
+
+    <div class="weather-details">
+      <div class="humidity">
+          <i class="fa-solid fa-droplet"></i>
+          <div class="text">
+              <span id="humidity">0%</span>
+              <p>humidity</p>
+          </div>
+      </div>
+      <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+              <span id="wind-speed">0Km/H</span>
+              <p>Wind-speed</p>
+          </div>
+      </div>
+  </div>
+    </div>
+    </div>
+
+    
+   <div class="conm"> 
+     <div id="cont2" >
+        <div id="content2">
+          <img src="images/big1.jpg" alt="">
+          <img src="images/big2.png" alt="">
+          <img src="images/big1.jpg" alt="">
+          <img src="images/big1.jpg">
+        </div>
+    </div>
+  </div>
+
+
+
+
+       <div class="sub">
+      <div class="con">
+        <div class="card-container">
+          <div class="card">
+            <img src="images/vegimage.jpeg" alt="">
+            <div class="card-content">
+              <h3>Vegetables</h3>
+              <p>Fresh produce for consumption</p>
+              <a href="Vegetables.html" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+          
+            <div class="card-container">
+              <div class="card">
+                <img src="images/fruits.jpg" alt="">
+                <div class="card-content">
+                  <h3>Fruits</h3>
+                  <p>Edible sweet or sour plant products</p>
+                  <a href="task2.html" class="btn">Read More</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card-container">
+              <div class="card">
+                <img src="images/seeds.jpeg" alt="">
+                <div class="card-content">
+                  <h3>Seeds</h3>
+                  <p>Planting materials for cultivation</p>
+                  <a href="Seeds.html" class="btn" >Read More</a>
+                </div>
+              </div>
+            </div>
+          
+            <a style="margin-bottom: 10px; border-radius: 20px; color: white; background-color: rgb(0, 200, 0);" href="cards.html" class="btn">View All-></View></a>
+        </div>
+              
+   
+
+          
+        <div class="con" style="  flex-direction: column; padding: 20px;">
+     
+            
+             <div style="border-radius: 10px; background-image: url(images/market\ price.jpg); background-color: aqua; height: 160px; margin-bottom: 5px;" class="con_extra"><p style="color: white; padding: 20px; "><b>Real-Time Price Updates:</b> Get the latest market rates for different crops.
+              <br><br><b> Market Comparisons:</b> Compare prices across multiple markets to maximize profits.</p></div>
+
+           <a style="margin-bottom: 5px;margin-top: 5px; border-radius: 20px; color: white; background-color: rgb(0, 200, 0);" href="market_price.html" class="btn">Live Market Price-></View></a>
+      </div>
+
+
+          
+        <div class="con" style="  flex-direction: column; padding: 17px;">
+     
+          <div style="border-radius: 10px; background-image: url(images/crop_rec.jpg); background-position: center; height: 160px; margin-bottom: 5px; text-align: center; color: white;"  class="con_extra"><p><h5>🌱 Crop Recognition System - Soil & Climate Analysis 🌾</h5>
+            <p style="font-size: small;">
+
+             The system evaluates Nitrogen (N), Phosphorus (P), Potassium (K), Temperature, Humidity, Rainfall, and pH to recommend the best crops for maximum yield & sustainability.            
+                
+            </p> 
+    
+          </div>
+
+         <a style="margin-bottom: 5px;margin-top: 10px; border-radius: 20px; color: white; background-color: rgb(0, 200, 0);" href="https://munna-8.onrender.com" class="btn">Click here -></View></a>
+                     
+      
+      </div>
+    </div>
+ 
+ 
+
+    <footer class="footer">
+      <div class="footer-content">
+          <p>&copy; 2024 Your Website Name. All Rights Reserved.</p>
+          <nav>
+              <ul class="footer-links" style="color: black;">
+
+                👤 Developed by: Suyog Dhepe & Prathamesh Chaudhari <br>
+                ✉️ Email: prchaudhari3172@gmail.com | suyogdhpe18@gmail.com <br>
+                 📞 Contact: 9325293274 | 8010124700 <br>
+                
+
+              </ul>
+          </nav>
+      </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      const inputBox=document.querySelector(".input-box");
+      const searchBtn=document.getElementById("searchBtn");
+      const weather_img=document.getElementById("weather-img");
+      const temperature=document.querySelector(".temperature");
+      const description=document.querySelector(".description");
+      const humidity=document.getElementById("humidity");
+      const wind_speed=document.getElementById("wind-speed");
+      const weather_body=document.getElementById("weather-body");
+      const not_found=document.querySelector(".error");
+      const wea=document.querySelector(".wea");
+      const fakewea=document.querySelector(".fakewea");
+      
+      
+      
+      async function checkweather(city){
+              const api_key="4acb9f7ec24958746a00522b6ee9c06b";
+              const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;  
+              const weather_data= await fetch(`${url}`).then(Response=>
+                  Response.json());
+                  
+                  if(weather_data.cod==='404'){
+                    not_found.style.display="flex";
+                    wea.style.display="none"; 
+                  }
+                  else{
+                      not_found.style.display="none";
+                      wea.style.display="flex"; 
+                      temperature.innerHTML=`${Math.round(weather_data.main.temp-273.15)}°C`;
+                      description.innerHTML=`${weather_data.weather[0].description}`;
+                      humidity.innerHTML=`${weather_data.main.humidity}%`;
+                      wind_speed.innerHTML=`${weather_data.wind.speed}Km/H`;
+             
+              switch(weather_data.weather[0].main){
+                        case 'Clouds':
+                      weather_img.src='images/cloudy.png';
+                      break;   
+                        case 'Clear':
+                      weather_img.src='images/clear.png';
+                      break;
+                        case 'Rain':
+                      weather_img.src='images/rain.png';
+                      break;
+                        case 'Mist':
+                      weather_img.src='images/mist.png';
+                      break;
+                        case 'snow':
+                      weather_img.src='images/snow.png';
+                      break;
+              }
+      
+                  }
+      
+              
+          }     
+      
+      searchBtn.addEventListener('click',()=>{
+               fakewea.style.display="none";
+               wea.style.display="flex";
+              checkweather(inputBox.value);
+      });</script>
+    <script src="https://kit.fontawesome.com/d1387099b9.js" crossorigin="anonymous"></script>
+</body>
+</html>

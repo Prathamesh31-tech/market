@@ -1,0 +1,334 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(212, 202, 202);
+    background-size: cover;
+}
+
+.navbar{
+    position: fixed;
+    width: 100vw;
+    z-index: 100000;
+}
+
+.logout{
+    color: red;
+    font-weight: 500;
+}
+#output{
+    margin: 10px;
+}
+.fakeheader{ 
+    height: 7vh;
+    margin-bottom: 10px;
+}
+.weather{
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: white;
+    height: 10vh;
+}
+.fakewea{
+    display: flex;
+    padding-top: 10px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.wea{
+
+    padding-top: 10px;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+
+}
+.cardheading{
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.search-box input{
+    padding: 4px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: black;
+    border-radius: 20px;
+    background: fixed;
+    border: 2px solid black;
+}
+
+.search-box input::placeholder{
+    color: rgb(4, 4, 4);
+}
+.search-box button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: fixed;
+    font-size: 0px;
+}
+.search-box button:hover{
+    background-color: rgb(62, 53, 53);
+    color: white;
+}
+
+
+#weather-img{
+    width: 70px;
+}
+
+.weather-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.weather-box .temperature{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 0%;
+}
+
+.weather-box .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.weather-box .description{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 0%;
+}
+
+.weather-details{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+}
+.humidity,.wind{
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 500;
+      position: relative;
+      margin-bottom: 0%;
+      display: flex;
+      align-items: center;
+     margin: 10px;
+}
+
+
+.weather-details i{
+    font-size: 20px;
+}
+
+.weather-details .text{
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.text span{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.error{
+    margin-top: 20px;
+    display:none;
+    align-items: center;
+    justify-content: center;
+}
+
+.error h1{
+    font-size: 20px;
+    color: rgb(235, 70, 70);
+    margin-block-end: 15px;
+
+}
+
+
+.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+.con{
+    background-color: white;
+    width: 380px;
+    border-radius: 20px;
+    margin: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.conm{
+    text-align: center;
+    height: 250px;
+    display: flex;
+}
+.card-con{
+    width:100%;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.card{
+    width: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px black;
+    margin: 5px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 2px;
+}
+
+.card-content h3{
+    font-size: 14px;
+}
+
+.card-content p{
+    font-size: 10px;
+}
+
+
+.card-content .btn{
+    display: inline-block;
+    padding: 1px 1px;
+    background-color: blue;
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+    
+}
+
+.extra{
+    background-color: blue;
+    height: 20vh;
+}
+
+.footer {
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: inline-flex;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+#cont2{
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+    width: 98%;
+    margin-left: 1%;
+    box-shadow: 0px 0px 20px rgb(0, 53, 0);
+
+}
+
+
+#content2{
+    height: 100%;
+
+    display: flex;
+    animation: scroll 10s linear infinite;
+    
+}
+/* @keyframes scroll{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*9));
+    }
+} */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#content2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+    
+}
+
+#content2 img:hover{
+    transform:scale(1.1);
+    z-index:2;
+
+}
